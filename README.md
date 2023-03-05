@@ -26,7 +26,7 @@ Check live demonstration <a href="https://dorota1997.github.io/react-frontend-de
 
 1. Clone or fork project.
 2. Install required dependencies with `npm install`.
-3. Remove `homepage` entirely from `package.json` or set it to single dot. 
+3. Remove `homepage` entirely from `package.json` or set it to single dot.
 
 ```
 // package.json
@@ -122,10 +122,6 @@ homepage property or json data won't load.
 - centered fullname/pos/theme toggler in Header section
 </pre>
 </details>
-
-<h3>:gear: Contribution</h3>
-
-If you have any suggestions on what to improve in <em>react-frontend-dev-portfolio</em> and would like to share them, feel free to leave an issue or fork project to implement your own ideas :slightly_smiling_face:
 
 <h3>:camera: Credits(images)</h3>
 
