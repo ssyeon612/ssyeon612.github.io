@@ -15,7 +15,7 @@
                 <a href="#experience"><font-awesome-icon icon="pencil" />EXPERIENCE</a>
             </li>
             <li class="menu">
-                <a href="#portfolio"><font-awesome-icon icon="folder-open" />PORTFOLIO</a>
+                <a href="#project"><font-awesome-icon icon="folder-open" />PORTFOLIO</a>
             </li>
             <font-awesome-icon icon="angles-up" />
         </ul>

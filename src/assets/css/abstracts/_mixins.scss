@@ -11,3 +11,27 @@
     position: absolute;
     z-index: 1;
 }
+
+//포지션
+@mixin position($position, $left: 0, $top: 0, $right: null, $bottom: null) {
+    position: $position;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+}
+
+//트랜지션
+@mixin transition($what, $time, $delay: null) {
+    transition-property: $what;
+    transition-duration: $time;
+    transition-delay: $delay;
+}
+
+@mixin tech-stack($color, $bg-color) {
+    background-color: $bg-color;
+    width: auto;
+    color: $color;
+    border-radius: 10 * $unit;
+    padding: 0 5 * $unit;
+}

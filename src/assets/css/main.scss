@@ -1,4 +1,4 @@
-@import "common";
+// @import "common";
 @import "layout";
 
 .wrap {
@@ -49,7 +49,6 @@ section {
     float: right;
     padding: $page-padding;
     border-radius: 20 * $unit;
-    width: 690px;
     margin-bottom: 50 * $unit;
     box-shadow: $shadow;
     .ttl {
@@ -190,8 +189,8 @@ section {
     }
 }
 
-// portfolio
-.portfolio {
+// project
+.project {
     display: flex;
     flex-wrap: wrap;
     gap: 15 * $unit;
@@ -201,8 +200,6 @@ section {
         text-align: center;
         padding: 20 * $unit;
         width: 220px;
-        height: 160px;
-        // padding-top: 1.5rem;
         cursor: pointer;
     }
     i {

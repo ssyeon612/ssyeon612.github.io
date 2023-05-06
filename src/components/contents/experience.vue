@@ -30,7 +30,7 @@
             <div class="con-box">
                 <p class="date">2013.12 - 2020.10</p>
                 <div class="timeline">
-                    <h4>해외취업 (싱가포르)</h4>
+                    <h4>해외근무 (싱가포르)</h4>
                     <p>식음료(F&amp;B) 부서<br />호텔 라운지 및 레스토랑</p>
                 </div>
             </div>

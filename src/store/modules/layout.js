@@ -3,27 +3,27 @@ export const state = {
 };
 
 export const getters = {
-    getModalComponents: (state) => {
+    getModalAlertComponents: (state) => {
         return state.modalAlertComponents;
     },
 };
 export const mutations = {
-    setModalComponents(state, { modalComponents }) {
-        state.modalAlertComponents = modalComponents;
+    setModalAlertComponents(state, { modalAlertComponents }) {
+        state.modalAlertComponents = modalAlertComponents;
     },
 };
 export const actions = {
-    pushModalComponents({ state, commit }, payload) {
+    pushModalAlertComponent({ state, commit }, payload) {
         state.modalAlertComponents.push(payload);
-        commit("setModalComponents", {
-            modalAlertComponents: state.setModalComponents,
+        commit("setModalAlertComponents", {
+            modalAlertComponents: state.modalAlertComponents,
         });
     },
-    removeModalComponents({commit}) {
-      commit('setModalComponents', {
-       modalAlertComponents : []
-      })
-    }
+    removeAllModalAlertComponent({ commit }) {
+        commit("setModalAlertComponents", {
+            modalAlertComponents: [],
+        });
+    },
 };
 
 export default {

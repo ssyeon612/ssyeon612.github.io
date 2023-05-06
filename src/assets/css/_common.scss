@@ -45,3 +45,22 @@ button {
     cursor: pointer;
     // background-color: transparent;
 }
+
+@media (max-width: 1200px) {
+    section {
+        width: 750px;
+    }
+}
+@media (min-width: 1200px) {
+    section {
+        width: 870px;
+    }
+}
+@media (max-width: $web-break-width) {
+    nav {
+        display: none;
+    }
+    section {
+        width: 100%;
+    }
+}
