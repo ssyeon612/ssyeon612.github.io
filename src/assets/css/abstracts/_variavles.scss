@@ -1,0 +1,38 @@
+//컬러
+$color-primary: #425ce0;
+$color-point: #3aebb6;
+$color-bg: #f6f7ff;
+$white: #ffffff;
+$grey-3: #f1f3f5;
+$grey-5: #fafafa;
+$grey-10: #f5f5f5;
+$grey-20: #eeeeee;
+$grey-30: #e0e0e0;
+$grey-40: #bdbdbd;
+$grey-50: #9e9e9e;
+$grey-60: #757575;
+$grey-70: #616161;
+$grey-80: #424242;
+$grey-90: #212121; // black
+
+//폰트
+$thin: 100;
+$light: 300;
+$demiLight: 350;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$black: 900;
+
+//단위
+$unit: 0.1rem;
+$page-padding: 20 * $unit;
+$header-height: 50 * $unit;
+$tab-depth01-height: 40 * $unit;
+$tab-depth02-height: 32 * $unit;
+$tab-height: 50 * $unit;
+$page-tab-height: 40 * $unit;
+$page-btn-height: 40 * $unit;
+
+// $shadow: 0 0 6 * $unit rgba(0, 0, 0, 0.15);
+$shadow: 0px 6px 20px rgba(66, 95, 225, 0.2);

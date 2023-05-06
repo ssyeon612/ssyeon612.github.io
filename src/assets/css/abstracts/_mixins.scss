@@ -1,0 +1,13 @@
+@charset "utf-8";
+@import "variavles";
+
+@mixin bar-circle($width, $height, $bg-color: $color-point) {
+    content: "";
+    display: block;
+    width: $width;
+    height: $height;
+    border-radius: 50%;
+    background-color: $bg-color;
+    position: absolute;
+    z-index: 1;
+}
