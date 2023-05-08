@@ -2,221 +2,242 @@
 @import "layout";
 
 .wrap {
-    padding: $page-padding;
+  width: 1170px;
+  margin: 80 * $unit auto;
+  height: inherit;
+  //   height: 100vh;
+  @media (max-width: 1200px) {
+    width: 1024px;
+  }
+  @media (max-width: $web-break-width) {
+    width: 100%;
+    padding: 0 15 * $unit;
+  }
 }
 
 // 네비게이션
 nav {
-    background-color: $color-primary;
-    width: 270px;
-    border-radius: 20 * $unit;
-    color: $white;
-    padding: 15 * $unit;
-    position: fixed;
-    li:not(:last-child) {
-        margin-bottom: 20 * $unit;
+  background-color: $color-primary;
+  width: 270px;
+  border-radius: 20 * $unit;
+  color: $white;
+  padding: 15 * $unit;
+  position: fixed;
+  li:not(:last-child) {
+    margin-bottom: 20 * $unit;
+  }
+  svg {
+    margin-right: 10 * $unit;
+  }
+  .profile {
+    h3 {
+      font-size: 15 * $unit;
+      &::after {
+        display: inline-block;
+        content: "";
+        background-color: $color-point;
+        border-radius: 50%;
+        width: 5 * $unit;
+        height: 5 * $unit;
+        margin-left: 3 * $unit;
+      }
     }
-    svg {
-        margin-right: 10 * $unit;
+    h6 {
+      font-size: 8 * $unit;
     }
-    .profile {
-        h3 {
-            font-size: 15 * $unit;
-            &::after {
-                display: inline-block;
-                content: "";
-                background-color: $color-point;
-                border-radius: 50%;
-                width: 5 * $unit;
-                height: 5 * $unit;
-                margin-left: 3 * $unit;
-            }
-        }
-        h6 {
-            font-size: 8 * $unit;
-        }
+  }
+  .menu {
+    font-size: 9 * $unit;
+    :hover {
+      font-weight: $bold;
     }
-    .menu {
-        font-size: 9 * $unit;
-        :hover {
-            font-weight: $bold;
-        }
-    }
+  }
+  @media (max-width: $web-break-width) {
+    display: none;
+  }
 }
 
 section {
-    background-color: $white;
-    float: right;
-    padding: $page-padding;
-    border-radius: 20 * $unit;
-    margin-bottom: 50 * $unit;
-    box-shadow: $shadow;
-    .ttl {
-        font-size: 12 * $unit;
-        font-weight: $bold;
-        margin-bottom: 20 * $unit;
-    }
+  background-color: $white;
+  float: right;
+  padding: $page-padding;
+  border-radius: 20 * $unit;
+  margin-bottom: 50 * $unit;
+  box-shadow: $shadow;
+  width: 870px;
+  .ttl {
+    font-size: 12 * $unit;
+    font-weight: $bold;
+    margin-bottom: 20 * $unit;
+  }
+  @media (max-width: 1200px) {
+    width: 690px;
+  }
+  @media (max-width: $web-break-width) {
+    width: 100%;
+  }
 }
 
 .bar {
-    width: 15 * $unit;
-    height: 2.5 * $unit;
-    background-color: $color-point;
-    border-radius: 25 * $unit;
+  width: 15 * $unit;
+  height: 2.5 * $unit;
+  background-color: $color-point;
+  border-radius: 25 * $unit;
 }
 
 .color {
-    color: #425ce0;
+  color: #425ce0;
 }
 
 .about {
-    .con {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        .profile {
-            border-radius: 70%;
-            overflow: hidden;
-            width: 150px;
-            height: 150px;
-        }
-        img {
-            object-fit: cover;
-        }
+  .con {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .profile {
+      border-radius: 70%;
+      overflow: hidden;
+      width: 150px;
+      height: 150px;
     }
-    .desc {
-        width: 75%;
-        margin-left: 20 * $unit;
-        b {
-            font-size: 13 * $unit;
-        }
-        p {
-            margin-bottom: 10 * $unit;
-        }
-        details {
-            summary {
-                font-weight: $bold;
-                cursor: pointer;
-            }
-            .detail {
-                margin-top: 10 * $unit;
-                dl {
-                    dt {
-                        font-weight: $bold;
-                    }
-                    dd {
-                        font-size: 8.5 * $unit;
-                        color: $grey-70;
-                    }
-                }
-            }
-        }
-        .info {
-            li {
-                margin-bottom: 0.5rem;
-                font-weight: $medium;
-            }
-        }
+    img {
+      object-fit: cover;
+      height: 100%;
     }
+  }
+  .desc {
+    width: 75%;
+    margin-left: 20 * $unit;
+    b {
+      font-size: 13 * $unit;
+    }
+    p {
+      margin-bottom: 10 * $unit;
+    }
+    details {
+      summary {
+        font-weight: $bold;
+        cursor: pointer;
+      }
+      .detail {
+        margin-top: 10 * $unit;
+        dl {
+          dt {
+            font-weight: $bold;
+          }
+          dd {
+            font-size: 8.5 * $unit;
+            color: $grey-70;
+          }
+        }
+      }
+    }
+    .info {
+      li {
+        margin-bottom: 0.5rem;
+        font-weight: $medium;
+      }
+    }
+  }
 
-    hr {
-        border: none;
-        height: 1px;
-        background-color: #c5cbce;
-        margin: 10 * $unit 0;
-    }
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #c5cbce;
+    margin: 10 * $unit 0;
+  }
 }
 
 // experience
 .experience {
-    position: relative;
-    padding: 50 * $unit 0;
-    .con-box {
-        display: flex;
-        align-items: flex-start;
-        &:not(:last-child) {
-            margin-bottom: 50 * $unit;
-        }
-        .date {
-            color: $grey-70;
-            min-width: 160px;
-            margin-right: 20 * $unit;
-            position: relative;
-            &::before {
-                @include bar-circle(14px, 14px, $white);
-                border: 1px solid $color-point;
-                right: 0;
-            }
-            &.present {
-                &::after {
-                    @include bar-circle(8px, 8px);
-                    border: 1px solid $color-point;
-                    top: 2 * $unit;
-                    right: 2 * $unit;
-                    z-index: 2;
-                }
-            }
-        }
-        .timeline {
-            h4 {
-                font-weight: $bold;
-            }
-            p {
-                color: $grey-80;
-                font-size: 8.5 * $unit;
-                margin-top: 5 * $unit;
-            }
-        }
+  position: relative;
+  padding: 50 * $unit 0;
+  .con-box {
+    display: flex;
+    align-items: flex-start;
+    &:not(:last-child) {
+      margin-bottom: 50 * $unit;
     }
-
-    .ex-bar {
-        position: absolute;
-        width: 1px;
-        border-right: 2px solid $color-point;
-        top: 14px;
-        bottom: 0;
-        left: 94 * $unit;
-        &::before {
-            @include bar-circle(5 * $unit, 5 * $unit);
-            top: 0;
-            left: -3px;
-        }
+    .date {
+      color: $grey-70;
+      min-width: 160px;
+      margin-right: 20 * $unit;
+      position: relative;
+      &::before {
+        @include bar-circle(14px, 14px, $white);
+        border: 1px solid $color-point;
+        right: 0;
+      }
+      &.present {
         &::after {
-            @include bar-circle(5 * $unit, 5 * $unit);
-            bottom: 0;
-            left: -3px;
+          @include bar-circle(8px, 8px);
+          border: 1px solid $color-point;
+          top: 2 * $unit;
+          right: 2 * $unit;
+          z-index: 2;
         }
+      }
     }
+    .timeline {
+      h4 {
+        font-weight: $bold;
+      }
+      p {
+        color: $grey-80;
+        font-size: 8.5 * $unit;
+        margin-top: 5 * $unit;
+      }
+    }
+  }
+
+  .ex-bar {
+    position: absolute;
+    width: 1px;
+    border-right: 2px solid $color-point;
+    top: 14px;
+    bottom: 0;
+    left: 94 * $unit;
+    &::before {
+      @include bar-circle(5 * $unit, 5 * $unit);
+      top: 0;
+      left: -3px;
+    }
+    &::after {
+      @include bar-circle(5 * $unit, 5 * $unit);
+      bottom: 0;
+      left: -3px;
+    }
+  }
 }
 
 // project
 .project {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15 * $unit;
-    .con-box {
-        border: 1px solid $grey-20;
-        border-radius: 10 * $unit;
-        text-align: center;
-        padding: 20 * $unit;
-        width: 220px;
-        cursor: pointer;
-    }
-    i {
-        color: $color-point;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15 * $unit;
+  .con-box {
+    border: 1px solid $grey-20;
+    border-radius: 10 * $unit;
+    text-align: center;
+    padding: 20 * $unit;
+    width: 220px;
+    cursor: pointer;
+  }
+  i {
+    color: $color-point;
+  }
 }
 
 .top-btn {
-    position: fixed;
-    width: 48px;
-    height: 48px;
-    background-color: $color-point;
-    border-radius: 50%;
-    bottom: 48px;
-    right: 48px;
-    line-height: 48px;
-    text-align: center;
-    z-index: 10;
-    color: white;
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  background-color: $color-point;
+  border-radius: 50%;
+  bottom: 48px;
+  right: 48px;
+  line-height: 48px;
+  text-align: center;
+  z-index: 10;
+  color: white;
 }
