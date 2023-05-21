@@ -3,10 +3,11 @@
         <div class="wrap" id="wrap">
             <the-nav></the-nav>
             <main class="main" role="main">
-                <Home />
+                <!-- <Home /> -->
                 <About />
                 <Experience />
                 <Project />
+                <Other />
             </main>
             <button class="top-btn" v-on:click="scrollToTop">
                 <font-awesome-icon icon="angle-up" />
@@ -25,6 +26,7 @@ import Home from "./contents/home";
 import About from "./contents/about";
 import Experience from "./contents/experience";
 import Project from "./contents/project";
+import Other from "./contents/otherExprience";
 // import PERCE from "./modal/portfolio/Perce";
 
 import { reactive, computed, toRefs } from "vue";
@@ -52,6 +54,7 @@ export default {
         About,
         Experience,
         Project,
+        Other,
         // PERCE,
     },
     setup() {

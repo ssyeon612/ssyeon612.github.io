@@ -12,10 +12,10 @@
                 <a href="#about"><font-awesome-icon icon="user" />ABOUT</a>
             </li>
             <li class="menu">
-                <a href="#experience"><font-awesome-icon icon="pencil" />EXPERIENCE</a>
+                <a href="#experience"><font-awesome-icon icon="pencil" />WORK EXPERIENCE</a>
             </li>
             <li class="menu">
-                <a href="#project"><font-awesome-icon icon="folder-open" />PORTFOLIO</a>
+                <a href="#project"><font-awesome-icon icon="folder-open" />PROJECT</a>
             </li>
             <font-awesome-icon icon="angles-up" />
         </ul>

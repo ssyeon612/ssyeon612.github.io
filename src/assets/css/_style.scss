@@ -1,5 +1,35 @@
 @import "common";
 
+.con {
+    .sm {
+        font-size: 8 * $unit;
+    }
+    .grey {
+        color: $grey-70;
+    }
+    ul {
+        li {
+            // margin-bottom: 5 * $unit;
+        }
+        h4 {
+            font-weight: $bold;
+            font-size: 12 * $unit;
+            display: flex;
+            span {
+                &::after {
+                    display: inline-block;
+                    content: "";
+                    background-color: $color-point;
+                    border-radius: 50%;
+                    width: 3 * $unit;
+                    height: 3 * $unit;
+                    margin-left: 3 * $unit;
+                }
+            }
+        }
+    }
+}
+
 //모달
 .modal {
     &_dim {
